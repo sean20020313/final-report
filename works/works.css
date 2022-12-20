@@ -1,5 +1,5 @@
 .img{
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     display: block;
 }
@@ -12,9 +12,11 @@ body{
     font-size: 2.5rem;
     text-align: center;
 }
-.work-center{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.underline{
+    margin:  0 auto;
+    width: 200px;
+    height: 0.5rem;
+    background-color: rgb(169, 169, 174);
 }
     
 
@@ -24,6 +26,26 @@ body{
     margin: 1rem;
     background-color: white;
     padding: 1rem;
+}
 
-
+@media screen and (min-width:768px){
+    .work-center{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:992px){
+    .work-center{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:1170px){
+    .work-center{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
