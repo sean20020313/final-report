@@ -17,11 +17,11 @@ index
 =======
 */
 .navbar-center{
-    height: 10rem;
-    font-size:2.5rem;
+    height: 5rem;
+    font-size:25px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: rgb(214, 214, 215);
+    background-color: var(--clr-primary-2);
  }
  .img{
    width: 5rem;
@@ -44,6 +44,7 @@ index
     max-width: 100rem;
     height: 80rem;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .content-info{
@@ -86,7 +87,7 @@ index
 work
 =======
 */
-.img{
+.work-img{
     max-width: 400px;
     margin: 0 auto;
     display: block;
@@ -136,4 +137,15 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+/*
+=========
+learning
+=========
+*/
+
+.learn{
+ font-size: 2rem;   
+ text-align: center;   
+ margin: 0 auto;
 }
