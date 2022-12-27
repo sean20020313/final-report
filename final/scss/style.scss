@@ -48,6 +48,7 @@ index
 }
 
 .content-info{
+    font-size: 60px;
     border: 2px solid var(--clr-primary-2);
     margin: 1rem;
 }
@@ -82,6 +83,7 @@ index
     width: 10rem;
     height: 10rem;
 }
+
 /*
 =======
 work
@@ -149,3 +151,85 @@ learning
  text-align: center;   
  margin: 0 auto;
 }
+@media  screen and (min-width:768px) {
+    .learn{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media  screen and (min-width:992px) {
+    .learn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media  screen and (min-width:1170px) {
+    .learn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*
+=======
+hero
+=======
+*/
+
+.hero{
+    background-color: var(--clr-primary-2);
+    height: 130hv;
+    
+    
+    &-center{
+        min-height:calc(100vh - 4rem) ;
+        display:grid ;
+        //justify-content: center;
+        //align-items: center;
+        place-items: center;
+    }
+    
+    &-img{
+        display:none ;
+    }
+  
+    &-photo{
+
+        max-width:25rem ;
+        max-height:30rem ;
+        object-fit: cover;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero{
+        .underline{
+            margin-left: 0;
+            margin-bottom:0.5rem;
+        }
+        .hero-info h4{
+            color: var(--clr-primary-1);
+        }
+
+        &-center{
+            grid-template-columns:1fr 1fr ;
+        }
+
+        &-img{
+            display:block ;
+            width:70% ;
+            position: relative;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                top: 2rem;
+                right: -2rem;
+                width: 100%;
+                height: 100%;
+                border: 0.25rem solid var(--clr-primary-1);
+                border-radius: 2px;
+            }
+        }
+    }
+}    
